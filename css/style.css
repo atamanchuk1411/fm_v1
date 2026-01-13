@@ -43,8 +43,10 @@ a {
 }
 
 footer{
+    position: relative;
     background-color: #f4d633;
     padding: 14rem 0;
+    z-index: 1;
 }
 
 .flex-between{
@@ -53,6 +55,7 @@ footer{
 }
 
 .items_center{
+    display: flex;
     align-items: center;
 }
 
@@ -66,7 +69,6 @@ footer{
 }
 
 .black{
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -74,7 +76,7 @@ footer{
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(4rem);
-    z-index: 2;
+    z-index: 1;
 }
 
 .header_container{
@@ -89,10 +91,11 @@ footer{
     height: 100vh;
     padding: 30rem;
     background-color: #1e3c6f;
-    z-index: 5;
 }
 
 .burger{
+    position: relative;
+    z-index: 2;
     padding-right: 30rem;
 }
 
@@ -129,6 +132,7 @@ footer{
     max-width: 438rem;
     padding: 0 56rem;
     border-radius: 20rem;
+    z-index: 5;
 }
 
 .menu a{
@@ -138,6 +142,10 @@ footer{
     line-height: 2.1em;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.contacts{
+    display: none;
 }
 
 .contacts a {
@@ -221,21 +229,35 @@ footer > div{
     grid-area: social;
 }
 
+@media screen and (max-width: 370px) {
+    footer > div{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (min-width: 370px) {
+    footer > div{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-areas: 
+        ". logo ."
+        "graphick . social";
+    }
+}
+
 @media screen and (max-width: 425px) {
     h1{
         font-size: 30rem;
     }
 }
 
-@media screen and (max-width: 525px) {
-    footer > div{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-        "logo logo"
-        "graphick social";
+@media screen and (min-width: 525px) {
+    footer > .wrapper{
+        display: flex;
+        justify-content: space-between;
     }
-} 
+}
 
 @media screen and (min-width: 880px) {
     header{
@@ -259,8 +281,16 @@ footer > div{
         background-color: rgba(172, 172, 170, 0.3);
     }
 
-    .cancel, .black_background, .burger{
+    a.cancel, .black, .burger{
         display: none;
+    }
+
+    a.phone_list{
+        display: none;
+    }
+
+    .contacts{
+        display: block;
     }
 }
 

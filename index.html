@@ -23,10 +23,16 @@
                         <li><a href="#">Контакти</a></li>
                         <li><a href="#">Івенти</a></li>
                         <li><a href="#">Групи</a></li>
+                        <li>
+                            <a href="#" class="phone_list items-center">
+                                <img src="img/phone.svg" alt="phone icon">
+                                +38 050 505 50 55
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="contacts">
-                    <a href="#" class="flex-between items-center gap_10">
+                    <a href="#" class="items-center">
                         <img src="img/phone.svg" alt="phone icon">
                         +38 050 505 50 55
                     </a>
@@ -60,13 +66,13 @@
         </main>
     </div>
     <footer>
-        <div class="wrapper flex-between">
+        <div class="wrapper">
             <div class="graphick">
                 <p>Пн-Пт: 8-20:00</p>
                 <p>Сб-Нд: 10-19:00</p>
             </div>
             <div class="social_nav">
-                <ul class="flex-between">
+                <ul class="list_footer flex-between">
                     <li><a href="#"><img src="img/geo.svg" alt="geolocation icon"></a></li>
                     <li><a href="#"><img src="img/inst.svg" alt="instagram icon"></a></li>
                     <li><a href="#"><img src="img/tg.svg" alt="telegram icon"></a></li>
@@ -74,27 +80,24 @@
             </div>
             <div class="bottom_logo">
                 <a href="index.html">
-                    <img src="img/logo_footer.svg" alt="second logo">
+                    <img src="img/logo_footer0.3.svg" alt="second logo">
+                    <p>sinse 2025</p>
                 </a>
-                <p>sinse 2025</p>
             </div>
         </div>
     </footer>
     <script>
         burger.onclick = () => {
             menu.style.left = '0'
-            black.style.display = "block"
         }
 
         black.onclick = () => {
             menu.style.left = '-100%'
-            black.style.display = "none"
         }
 
         cancel.onclick = (e) => {
             e.preventDefault()
             menu.style.left = '-100%'
-            black.style.display = "none"
         }
     </script>
 </body>
