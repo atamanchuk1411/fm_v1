@@ -140,8 +140,8 @@ footer{
 .navigation{
     width: 100%;
     max-width: 438rem;
-    padding: 0 56rem;
-    border-radius: 20rem;
+    padding: 0 26rem;
+    border-radius: 30rem;
     z-index: 5;
 }
 
