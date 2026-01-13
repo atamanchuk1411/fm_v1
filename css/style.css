@@ -83,6 +83,16 @@ footer{
     flex-direction: row;
 }
 
+.logo img{
+    width: 167rem;
+    height: 37rem;
+}
+
+.icon_phone{
+    width: 26rem;
+    height: 26rem;
+}
+
 .menu{
     position: fixed;
     top: 0;
@@ -180,7 +190,7 @@ footer{
     text-transform: uppercase;
     color: #f4d633;
     font-weight: bold;
-    border-radius: 35px;
+    border-radius: 35rem;
     background-color: transparent;
     border: 3rem solid #f4d633;
 }
@@ -188,6 +198,11 @@ footer{
 .raiting_container{
     font-size: 20rem;
     font-weight: bold;
+}
+
+.raiting_container img{
+    width: 99rem;
+    height: 19rem;
 }
 
 .ball_container{
@@ -217,8 +232,18 @@ footer > div{
     padding: 0 15rem;
 }
 
+.list_footer img{
+    width: 25rem;
+    height: 25rem;
+}
+
 .bottom_logo{
     grid-area: logo;
+}
+
+.bottom_logo img{
+    width: 167rem;
+    height: 37rem;
 }
 
 .graphick{
