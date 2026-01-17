@@ -225,7 +225,6 @@ footer{
 footer p{
     font-size: 12rem;
     color: #204075;
-    text-align: right;
 }
 
 footer > div{
@@ -235,6 +234,11 @@ footer > div{
 .list_footer img{
     width: 25rem;
     height: 25rem;
+}
+
+.list_footer{
+    display: flex;
+    flex-direction: row;
 }
 
 .bottom_logo{
@@ -258,6 +262,12 @@ footer > div{
     footer > div{
         display: flex;
         flex-direction: column-reverse;
+        align-items: center;
+        gap: 10rem;
+    }
+
+    .bottom_logo p{
+        padding-left: 130rem;
     }
 }
 
@@ -268,6 +278,14 @@ footer > div{
         grid-template-areas: 
         ". logo ."
         "graphick . social";
+    }
+
+    .graphick{
+        padding-left: 15rem;
+    }
+
+    .bottom_logo p{
+        text-align: right;
     }
 }
 
