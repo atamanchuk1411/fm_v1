@@ -8,6 +8,7 @@ html{
 }
 
 body{
+    min-height: 100wh;
     font-family: "Arial";
 }
 
@@ -93,19 +94,24 @@ footer{
     height: 26rem;
 }
 
+.contacts p{
+    display: inline;
+}
+
 .menu{
     position: fixed;
     top: 0;
     left: -100%;
-    width: 70vw;
+    width: 100vw;
     height: 100vh;
     padding: 30rem;
     background-color: #1e3c6f;
+    box-sizing: border-box;
 }
 
 .burger{
     position: relative;
-    z-index: 2;
+    z-index: 1;
     padding-right: 30rem;
 }
 
@@ -118,7 +124,7 @@ footer{
     background-color: #fff;
     background-repeat: 1rem;
     border-radius: 3rem;
-    z-index: 2;
+    z-index: 1;
 }
 
 .cancel{
@@ -152,6 +158,10 @@ footer{
     line-height: 2.1em;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+a.phone_list{
+    display: flex;
 }
 
 .contacts{
